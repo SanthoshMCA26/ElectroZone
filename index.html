@@ -12,14 +12,16 @@
 </head>
 
 <body id="top">
-    <div id="page">
-        <header>
+    <header>
+        <div class="header-inner">
             <img class="site-logo" src="images/logo.jpg" alt="ElectroZone logo">
             <div class="header-text">
                 <h1>ElectroZone</h1>
                 <p>Every electronic part for your next circuit</p>
             </div>
-        </header>
+        </div>
+    </header>
+    <div id="page">
         <nav class="navbar navbar-expand-600 site-navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -29,7 +31,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                        </li>
                         <li class="nav-item"><a href="components.html" class="nav-link">Components</a></li>
                         <li class="nav-item"><a href="boards.html" class="nav-link">Controller Boards</a></li>
                         <li class="nav-item"><a href="store.html" class="nav-link">Shop &amp; Location</a></li>
@@ -64,19 +67,84 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><th scope="row" class="band band-black">Black</th><td>0</td><td>&times;1</td><td>&mdash;</td></tr>
-                    <tr><th scope="row" class="band band-brown">Brown</th><td>1</td><td>&times;10</td><td>&plusmn;1%</td></tr>
-                    <tr><th scope="row" class="band band-red">Red</th><td>2</td><td>&times;100</td><td>&plusmn;2%</td></tr>
-                    <tr><th scope="row" class="band band-orange">Orange</th><td>3</td><td>&times;1k</td><td>&mdash;</td></tr>
-                    <tr><th scope="row" class="band band-yellow">Yellow</th><td>4</td><td>&times;10k</td><td>&mdash;</td></tr>
-                    <tr><th scope="row" class="band band-green">Green</th><td>5</td><td>&times;100k</td><td>&plusmn;0.5%</td></tr>
-                    <tr><th scope="row" class="band band-blue">Blue</th><td>6</td><td>&times;1M</td><td>&plusmn;0.25%</td></tr>
-                    <tr><th scope="row" class="band band-violet">Violet</th><td>7</td><td>&times;10M</td><td>&plusmn;0.1%</td></tr>
-                    <tr><th scope="row" class="band band-gray">Gray</th><td>8</td><td>&times;100M</td><td>&plusmn;0.05%</td></tr>
-                    <tr><th scope="row" class="band band-white">White</th><td>9</td><td>&times;1G</td><td>&mdash;</td></tr>
-                    <tr><th scope="row" class="band band-gold">Gold</th><td>&mdash;</td><td>&times;0.1</td><td>&plusmn;5%</td></tr>
-                    <tr><th scope="row" class="band band-silver">Silver</th><td>&mdash;</td><td>&times;0.01</td><td>&plusmn;10%</td></tr>
-                    <tr><th scope="row" class="band band-none">None</th><td>&mdash;</td><td>&mdash;</td><td>&plusmn;20%</td></tr>
+                    <tr>
+                        <th scope="row" class="band band-black">Black</th>
+                        <td>0</td>
+                        <td>&times;1</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-brown">Brown</th>
+                        <td>1</td>
+                        <td>&times;10</td>
+                        <td>&plusmn;1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-red">Red</th>
+                        <td>2</td>
+                        <td>&times;100</td>
+                        <td>&plusmn;2%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-orange">Orange</th>
+                        <td>3</td>
+                        <td>&times;1k</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-yellow">Yellow</th>
+                        <td>4</td>
+                        <td>&times;10k</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-green">Green</th>
+                        <td>5</td>
+                        <td>&times;100k</td>
+                        <td>&plusmn;0.5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-blue">Blue</th>
+                        <td>6</td>
+                        <td>&times;1M</td>
+                        <td>&plusmn;0.25%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-violet">Violet</th>
+                        <td>7</td>
+                        <td>&times;10M</td>
+                        <td>&plusmn;0.1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-gray">Gray</th>
+                        <td>8</td>
+                        <td>&times;100M</td>
+                        <td>&plusmn;0.05%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-white">White</th>
+                        <td>9</td>
+                        <td>&times;1G</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-gold">Gold</th>
+                        <td>&mdash;</td>
+                        <td>&times;0.1</td>
+                        <td>&plusmn;5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-silver">Silver</th>
+                        <td>&mdash;</td>
+                        <td>&times;0.01</td>
+                        <td>&plusmn;10%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="band band-none">None</th>
+                        <td>&mdash;</td>
+                        <td>&mdash;</td>
+                        <td>&plusmn;20%</td>
+                    </tr>
                 </tbody>
             </table>
         </aside>
@@ -162,11 +230,13 @@
             <div class="shop_box"><strong>Shop open</strong><br>Mon&ndash;Sat: 10 AM &ndash; 8 PM<br><a
                     href="store.html">Get directions</a></div>
         </aside>
-        <footer>
+    </div>
+    <footer>
+        <div class="footer-inner">
             <p>&copy; ElectroZone. All rights reserved. &nbsp;|&nbsp; Prices in &#8377; (INR)</p>
             <a class="back-to-top" href="#top">Back to top &#8593;</a>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

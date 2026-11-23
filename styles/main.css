@@ -217,14 +217,12 @@ img {
 
 #main img,
 .item img,
-.thumbs img,
 .shop_box img {
     transition: transform .25s ease, box-shadow .25s ease;
 }
 
 #main img:hover,
 .item img:hover,
-.thumbs img:hover,
 .shop_box img:hover {
     transform: scale(1.04);
     box-shadow: 0 6px 16px rgba(11, 61, 46, .25);

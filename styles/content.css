@@ -217,14 +217,12 @@ img {
 
 #main img,
 .item img,
-.thumbs img,
 .product-carousel img {
     transition: transform .25s ease, box-shadow .25s ease;
 }
 
 #main img:hover,
 .item img:hover,
-.thumbs img:hover,
 .product-carousel img:hover {
     transform: scale(1.04);
     box-shadow: 0 6px 16px rgba(11, 61, 46, .25);
@@ -437,30 +435,6 @@ th {
 .item h3 {
     color: #0b3d2e;
     margin: 0 0 .2em;
-}
-
-.thumbs {
-    list-style: none;
-    padding: 0;
-}
-
-.thumbs li {
-    overflow: hidden;
-    margin: 0 0 .4em;
-}
-
-.thumbs img {
-    float: left;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    margin-right: .5em;
-    border: 1px solid #b7d6c8;
-}
-
-.thumbs a {
-    display: block;
-    line-height: 40px;
 }
 
 .box {

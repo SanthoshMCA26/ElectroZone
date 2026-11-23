@@ -31,7 +31,8 @@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="components.html" class="nav-link active" aria-current="page">Components</a></li>
+                        <li class="nav-item"><a href="components.html" class="nav-link active"
+                                aria-current="page">Components</a></li>
                         <li class="nav-item"><a href="boards.html" class="nav-link">Controller Boards</a></li>
                         <li class="nav-item"><a href="store.html" class="nav-link">Shop &amp; Location</a></li>
                     </ul>
@@ -62,6 +63,105 @@
                 <li><a href="#crystal"><img src="images/crstal_ossilator.jpg" alt="">Crystal oscillator</a></li>
                 <li><a href="#relay"><img src="images/relay.jpg" alt="">Relay module</a></li>
                 <li><a href="#ic"><img src="images/ic.jpg" alt="">Integrated circuit</a></li>
+            </ul>
+            <h3>Price table</h3>
+            <table class="aside-price-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Component</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Resistor</td><td class="price">&#8377;5 for a pack of 10</td></tr>
+                    <tr><td>Inductor</td><td class="price">&#8377;25 each</td></tr>
+                    <tr><td>Transformer</td><td class="price">&#8377;180 each</td></tr>
+                    <tr><td>Rectifier diode</td><td class="price">&#8377;10 for a pack of 10</td></tr>
+                    <tr><td>Zener diode</td><td class="price">&#8377;15 for a pack of 10</td></tr>
+                    <tr><td>LED</td><td class="price">&#8377;20 for a pack of 10</td></tr>
+                    <tr><td>Transistor</td><td class="price">&#8377;20 for a pack of 10</td></tr>
+                    <tr><td>Crystal oscillator</td><td class="price">&#8377;15 each</td></tr>
+                    <tr><td>Relay module</td><td class="price">&#8377;70 each</td></tr>
+                    <tr><td>Integrated circuit</td><td class="price">&#8377;25 each</td></tr>
+                </tbody>
+            </table>
+            <h3>Component symbols</h3>
+            <table class="symbol-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Component</th>
+                        <th scope="col">Typical use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><svg class="symbol-icon" role="img" aria-label="Resistor circuit symbol"
+                                viewBox="0 0 60 30">
+                                <path d="M2 15h8l5-8 8 16 8-16 8 16 8-16 5 8h6" />
+                            </svg></td>
+                        <th scope="row">Resistor</th>
+                        <td>Limits current</td>
+                    </tr>
+                    <tr>
+                        <td><svg class="symbol-icon" role="img" aria-label="Capacitor circuit symbol"
+                                viewBox="0 0 60 30">
+                                <path d="M2 15h21m0-10v20m14-20v20m0-10h21" />
+                            </svg></td>
+                        <th scope="row">Capacitor</th>
+                        <td>Stores charge</td>
+                    </tr>
+                    <tr>
+                        <td><svg class="symbol-icon" role="img" aria-label="Diode circuit symbol"
+                                viewBox="0 0 60 30">
+                                <path d="M2 15h13m30 0h13M35 5v20" />
+                                <path class="symbol-diode" d="M15 5l20 10-20 10z" />
+                            </svg></td>
+                        <th scope="row">Diode</th>
+                        <td>One-way current</td>
+                    </tr>
+                    <tr>
+                        <td><svg class="symbol-icon" role="img" aria-label="LED circuit symbol"
+                                viewBox="0 0 60 30">
+                                <path d="M2 15h13m30 0h13M35 5v20M30 5l8-8m-4 0h4v4M39 10l8-8m-4 0h4v4" />
+                                <path class="symbol-diode" d="M15 5l20 10-20 10z" />
+                            </svg></td>
+                        <th scope="row">LED</th>
+                        <td>Emits light</td>
+                    </tr>
+                    <tr>
+                        <td><svg class="symbol-icon" role="img" aria-label="NPN transistor circuit symbol"
+                                viewBox="0 0 60 40">
+                                <path d="M21 7v26M3 20h18m0-8 17-9m0 0v-3m-17 28 17 9m0 0v3M27 27l8 3-3-8" />
+                            </svg></td>
+                        <th scope="row">Transistor (NPN)</th>
+                        <td>Switches or amplifies</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Glossary</h3>
+            <dl class="aside-glossary">
+                <dt>Anode</dt>
+                <dd>The positive side of a diode or LED.</dd>
+                <dt>Cathode</dt>
+                <dd>The negative side of a diode or LED.</dd>
+                <dt>Polarity</dt>
+                <dd>The positive and negative orientation of a component.</dd>
+                <dt>Datasheet</dt>
+                <dd>The manufacturer&rsquo;s guide to a part&rsquo;s ratings and connections.</dd>
+                <dt>PCB</dt>
+                <dd>Printed circuit board; it holds and connects components.</dd>
+            </dl>
+            <h3>How to identify components</h3>
+            <ul class="identification-guide">
+                <li><strong>Resistor:</strong> Read the colour bands; use a meter to confirm its value.</li>
+                <li><strong>Capacitor:</strong> On an electrolytic type, the stripe marks the negative side. Ceramic
+                    capacitors are usually non-polar.</li>
+                <li><strong>Diode:</strong> The band marks the cathode (negative side).</li>
+                <li><strong>LED:</strong> With untrimmed leads, the longer leg is the anode (+); the shorter leg and
+                    flat edge mark the cathode (-).</li>
+                <li><strong>Transistor:</strong> Check the part number and datasheet for its pinout; pin order varies
+                    by model.</li>
             </ul>
         </aside>
         <main id="main">
@@ -130,7 +230,7 @@
             <a class="back-to-top" href="#top">Back to top &#8593;</a>
         </footer>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

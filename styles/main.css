@@ -289,6 +289,92 @@ th {
     color: #fff;
 }
 
+.resistor-code {
+    table-layout: fixed;
+    font-size: .72em;
+}
+
+.resistor-code th,
+.resistor-code td {
+    padding: .3em .15em;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.resistor-code th:first-child {
+    width: 27%;
+}
+
+.resistor-code .band {
+    text-align: left;
+}
+
+.resistor-code .band-black {
+    background: #000;
+    color: #fff;
+}
+
+.resistor-code .band-brown {
+    background: #8b4513;
+    color: #fff;
+}
+
+.resistor-code .band-red {
+    background: #c00000;
+    color: #fff;
+}
+
+.resistor-code .band-orange {
+    background: #fd7e14;
+    color: #222;
+}
+
+.resistor-code .band-yellow {
+    background: #ffc107;
+    color: #222;
+}
+
+.resistor-code .band-green {
+    background: #198754;
+    color: #fff;
+}
+
+.resistor-code .band-blue {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.resistor-code .band-violet {
+    background: #6f42c1;
+    color: #fff;
+}
+
+.resistor-code .band-gray {
+    background: #6c757d;
+    color: #fff;
+}
+
+.resistor-code .band-white {
+    background: #fff;
+    color: #222;
+}
+
+.resistor-code .band-gold {
+    background: #d4af37;
+    color: #222;
+}
+
+.resistor-code .band-silver {
+    background: #c0c0c0;
+    color: #222;
+}
+
+.resistor-code .band-none {
+    background: #fff;
+    color: #222;
+    border: 2px dashed #777;
+}
+
 .table_wrap {
     overflow-x: auto;
     clear: both;

@@ -278,6 +278,78 @@ table {
     margin-bottom: 1em;
 }
 
+.aside-price-table {
+    font-size: .8em;
+}
+
+.aside-price-table th,
+.aside-price-table td {
+    padding: .3em;
+}
+
+.symbol-table {
+    table-layout: fixed;
+    font-size: .72em;
+}
+
+.symbol-table th,
+.symbol-table td {
+    padding: .3em .2em;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.symbol-table th:nth-child(1),
+.symbol-table td:nth-child(1) {
+    width: 24%;
+}
+
+.symbol-table th:nth-child(2),
+.symbol-table td:nth-child(2) {
+    width: 29%;
+}
+
+.symbol-table tbody th {
+    background: #f1f5f2;
+    color: #222;
+}
+
+.symbol-icon {
+    display: block;
+    width: 44px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: visible;
+    color: #222;
+}
+
+.symbol-icon path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.symbol-icon .symbol-diode {
+    fill: currentColor;
+}
+
+.aside-glossary,
+.identification-guide {
+    font-size: .85em;
+}
+
+.aside-glossary dt {
+    color: #0b3d2e;
+    font-weight: bold;
+}
+
+.aside-glossary dd {
+    margin: 0 0 .45em;
+}
+
 th,
 td {
     border: 1px solid #b8c7d3;
@@ -298,6 +370,19 @@ th {
 .price {
     color: #b34700;
     font-weight: bold;
+}
+
+.industry-board-note,
+.industry-board-list {
+    font-size: .85em;
+}
+
+.industry-board-list {
+    padding-left: 1.2em;
+}
+
+.industry-board-list li {
+    margin-bottom: .5em;
 }
 
 #aside {
